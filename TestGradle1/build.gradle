@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'commons-codec:commons-codec:1.6'
+}
+
+task gradleTest(type: JavaExec){
+	main = 'TestGradle'
+	classpath = runtimeClasspath
+}
